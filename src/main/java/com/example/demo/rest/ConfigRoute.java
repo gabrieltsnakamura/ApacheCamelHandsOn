@@ -3,11 +3,13 @@ package com.example.demo.rest;
 import org.apache.camel.component.servlet.CamelHttpTransportServlet;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ConfigRoute {
-	
+
 	private static final String CAMEL_URL_MAPPING = "/api/*";
-	private static final String CAMEL_SERVLET_NAME = "CamelServlet";
+	private static final String CAMEL_SERVLET_NAME = "CALEM";
 
 	@SuppressWarnings("rawtypes")
 	@Bean
